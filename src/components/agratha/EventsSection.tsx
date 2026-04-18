@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { events, type AgrathaEvent } from "@/data/events";
+import { ChevronDown, Filter } from "lucide-react";
 import EventCard from "./EventCard";
 import EventModal from "./EventModal";
 
@@ -49,24 +50,38 @@ const EventsSection = () => {
               badges, and legendary status in the arena.
             </p>
           </div>
-
           {/* Department Filters */}
-          <div className="relative w-full max-w-3xl lg:ml-auto group">
+          <div className="relative w-full max-w-xl lg:ml-auto group">
             <span className="block w-full lg:text-right font-mono-tech text-[10px] tracking-[0.4em] text-muted-foreground uppercase opacity-60 mb-3">
-              // Select Branch
+              // Filter by Branch
             </span>
             
             <div className="relative">
-              {/* Gradient Masks */}
-              <div className="absolute left-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute right-0 top-0 bottom-0 w-8 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
-              
-              <div className="flex overflow-x-auto no-scrollbar pb-4 -mb-4 gap-2 scroll-smooth">
+              {/* Mobile Dropdown */}
+              <div className="lg:hidden relative">
+                <select
+                  value={deptFilter}
+                  onChange={(e) => setDeptFilter(e.target.value)}
+                  className="w-full bg-arena-deep border border-primary/30 rounded-xl px-5 py-4 font-display text-sm font-bold tracking-widest uppercase text-foreground appearance-none shadow-glow-cyan/20 focus:outline-none focus:border-primary transition-all"
+                >
+                  {departments.map((dept) => (
+                    <option key={dept} value={dept}>
+                      {dept === "all" ? "All Branches" : dept}
+                    </option>
+                  ))}
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-primary">
+                  <ChevronDown className="h-5 w-5" />
+                </div>
+              </div>
+
+              {/* Desktop Pills */}
+              <div className="hidden lg:flex flex-wrap justify-end gap-2">
                 {departments.map((dept) => (
                   <button
                     key={dept}
                     onClick={() => setDeptFilter(dept)}
-                    className={`relative flex-shrink-0 px-5 py-2.5 rounded-full font-display text-[10px] md:text-xs font-bold tracking-widest uppercase transition-all duration-300 ${
+                    className={`relative px-5 py-2.5 rounded-full font-display text-xs font-bold tracking-widest uppercase transition-all duration-300 ${
                       deptFilter === dept
                         ? "text-background"
                         : "text-muted-foreground hover:text-foreground border border-primary/20 hover:border-primary/50"

@@ -26,7 +26,7 @@ const EventModal = ({ event, onClose }: Props) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-background/80 backdrop-blur-md"
+          className="fixed inset-0 z-[80] flex justify-center p-4 bg-background/80 backdrop-blur-md overflow-y-auto scrollbar-none"
           onClick={onClose}
         >
           <motion.div
@@ -35,7 +35,7 @@ const EventModal = ({ event, onClose }: Props) => {
             exit={{ scale: 0.95, opacity: 0, y: 10 }}
             transition={{ type: "spring", damping: 22, stiffness: 280 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-2xl"
+            className="relative w-full max-w-2xl my-auto"
           >
             <div className="absolute -inset-1 rounded-3xl bg-gradient-neon opacity-50 blur-xl" />
             <div className="relative glass-panel rounded-3xl overflow-hidden hud-corners">
@@ -85,7 +85,7 @@ const EventModal = ({ event, onClose }: Props) => {
               </div>
 
               {/* Body */}
-              <div className="p-6 md:p-8 space-y-6 max-h-[55vh] overflow-y-auto">
+              <div className="p-6 md:p-8 space-y-6">
                 <div>
                   <div className="font-mono-tech text-[10px] tracking-[0.3em] text-muted-foreground uppercase mb-2">
                     Mission Description
