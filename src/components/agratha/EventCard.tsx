@@ -65,11 +65,6 @@ const EventCard = ({
                 {event.name}
               </h3>
             </div>
-            <div className="flex items-center gap-1 text-neon-yellow font-display font-bold text-sm flex-shrink-0">
-              <Zap className="h-3.5 w-3.5 fill-neon-yellow" />
-              {event.xp}
-              <span className="text-[10px] font-mono-tech text-muted-foreground ml-0.5">XP</span>
-            </div>
           </div>
         <div className="relative font-mono-tech text-[10px] tracking-widest text-muted-foreground uppercase mt-1">
           {event.department}

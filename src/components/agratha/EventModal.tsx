@@ -78,10 +78,6 @@ const EventModal = ({ event, onClose }: Props) => {
                     <Trophy className="h-3 w-3 text-secondary" />
                     {event.difficulty}
                   </span>
-                  <span className="inline-flex items-center gap-1.5 font-mono-tech text-xs px-3 py-1 rounded-full glass-panel">
-                    <Zap className="h-3 w-3 text-neon-yellow fill-neon-yellow" />
-                    {event.xp} XP
-                  </span>
                 </div>
               </div>
 
