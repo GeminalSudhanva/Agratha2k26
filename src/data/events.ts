@@ -24,6 +24,7 @@ export const events: AgrathaEvent[] = [
   {
     id: "hack-fusion",
     name: "Hack-Fusion 2K26",
+    image: "/hackthon.jpeg",
     department: "Computer Science & Allied",
     category: "mega",
     date: "5/5/2026 – 6/5/2026",
@@ -428,6 +429,7 @@ export const events: AgrathaEvent[] = [
     department: "Electrical & Electronics Engineering",
     category: "technical",
     date: "8/5/2026",
+    registrationUrl: "https://docs.google.com/forms/d/1IG1P3UKRAZDO85Jh_9GlNe2J-crVgLe65vDRGIq8yDM/viewform",
     time: "10:30 AM onwards",
     description: "Words sharper than circuits. Argue your tech case in this intellectual battle.",
     rules: [
@@ -524,13 +526,23 @@ export const events: AgrathaEvent[] = [
   {
     id: "nexon-fun-on",
     name: "NEXON-FUN ON",
+    image: "/nexon.jpeg",
     department: "MBA",
     category: "non-technical",
     date: "7/5/2026",
-    description: "A 4-event MBA mashup of strategy, fun, and pure adrenaline.",
+    description: "A 4-event MBA mashup featuring HR, Finance, and MM tracks. A test of strategy, fun, and pure adrenaline.",
     coordinators: [{ name: "Dr. Vani", phone: "8951035919" }],
     xp: 600,
     difficulty: "Elite",
+    rules: [
+      "General: Participants must report on time. Late entries may be disqualified.",
+      "Track Categories: HR / Finance / MM",
+      "Team Size: 6 members per group (Teams of 2 members)",
+      "Dress Code: Formal college uniform and compulsory ID card",
+      "Stricly follow all arena instructions (Mandatory)",
+      "Judge's decision is final and binding"
+    ],
+    prizes: ["Attractive Cash Prizes"],
   },
   {
     id: "debug-battle",
@@ -672,6 +684,7 @@ export const events: AgrathaEvent[] = [
   {
     id: "auto-expo",
     name: "Auto-Expo",
+    image: "/auto expo.jpeg",
     department: "AGM Volunteers",
     category: "mega",
     date: "4/5/2026",
