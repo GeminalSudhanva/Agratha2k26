@@ -693,3 +693,5 @@ export const megaEvents = [
 
 // Event start = 4 May 2026
 export const EVENT_START_DATE = new Date("2026-05-04T09:00:00+05:30");
+// Preparation season start = 1 March 2026
+export const SEASON_START_DATE = new Date("2026-03-01T09:00:00+05:30");

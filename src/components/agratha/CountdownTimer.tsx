@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { EVENT_START_DATE } from "@/data/events";
+import { EVENT_START_DATE, SEASON_START_DATE } from "@/data/events";
 
 const calc = () => {
   const diff = EVENT_START_DATE.getTime() - Date.now();
@@ -10,6 +10,13 @@ const calc = () => {
     m: Math.floor((diff / (1000 * 60)) % 60),
     s: Math.floor((diff / 1000) % 60),
   };
+};
+
+const calcLoad = () => {
+  const total = EVENT_START_DATE.getTime() - SEASON_START_DATE.getTime();
+  const elapsed = Date.now() - SEASON_START_DATE.getTime();
+  const progress = Math.min(100, Math.max(0, (elapsed / total) * 100));
+  return Math.round(progress * 10) / 10;
 };
 
 const Cell = ({ value, label }: { value: number; label: string }) => (
@@ -28,9 +35,13 @@ const Cell = ({ value, label }: { value: number; label: string }) => (
 
 const CountdownTimer = () => {
   const [t, setT] = useState(calc());
+  const [load, setLoad] = useState(calcLoad());
 
   useEffect(() => {
-    const i = setInterval(() => setT(calc()), 1000);
+    const i = setInterval(() => {
+      setT(calc());
+      setLoad(calcLoad());
+    }, 1000);
     return () => clearInterval(i);
   }, []);
 
@@ -59,12 +70,12 @@ const CountdownTimer = () => {
       <div className="mt-6 pt-5 border-t border-border/60">
         <div className="flex items-center justify-between text-xs font-mono-tech text-muted-foreground mb-2">
           <span>SEASON LOAD</span>
-          <span className="text-primary">87%</span>
+          <span className="text-primary">{load}%</span>
         </div>
         <div className="h-2 rounded-full bg-arena-deep overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-neon relative"
-            style={{ width: "87%" }}
+            className="h-full rounded-full bg-gradient-neon relative transition-all duration-1000"
+            style={{ width: `${load}%` }}
           >
             <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-white/50 to-transparent" />
           </div>
