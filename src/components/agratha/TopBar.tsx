@@ -13,7 +13,7 @@ const TopBar = () => {
           <img 
             src="/colleg logo-Photoroom.png" 
             alt="College Logo" 
-            className="h-12 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+            className="h-10 sm:h-12 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
           />
         </motion.div>
 
@@ -28,7 +28,7 @@ const TopBar = () => {
             <img 
               src="/swamiji-Photoroom.png" 
               alt="Swamiji" 
-              className="relative h-16 md:h-24 w-auto object-contain"
+              className="relative h-14 sm:h-16 md:h-24 w-auto object-contain"
             />
           </div>
         </motion.div>
@@ -42,7 +42,7 @@ const TopBar = () => {
           <img 
             src="/agrata logo-Photoroom.png" 
             alt="Agratha Logo" 
-            className="h-12 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+            className="h-10 sm:h-12 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
           />
         </motion.div>
       </div>

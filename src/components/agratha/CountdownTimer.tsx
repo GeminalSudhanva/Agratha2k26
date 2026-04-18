@@ -15,11 +15,11 @@ const calc = () => {
 const Cell = ({ value, label }: { value: number; label: string }) => (
   <div className="relative group">
     <div className="absolute -inset-0.5 rounded-xl bg-gradient-neon opacity-30 blur-md group-hover:opacity-70 transition" />
-    <div className="relative glass-panel rounded-xl p-4 text-center hud-corners">
-      <div className="font-display text-4xl md:text-5xl font-black neon-text tabular-nums">
+    <div className="relative glass-panel rounded-xl p-2 sm:p-3 md:p-4 text-center hud-corners">
+      <div className="font-display text-2xl sm:text-3xl md:text-5xl font-black neon-text tabular-nums">
         {value.toString().padStart(2, "0")}
       </div>
-      <div className="mt-1 font-mono-tech text-[10px] tracking-[0.3em] text-muted-foreground uppercase">
+      <div className="mt-1 font-mono-tech text-[8px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-muted-foreground uppercase">
         {label}
       </div>
     </div>
@@ -49,7 +49,7 @@ const CountdownTimer = () => {
           T-
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-4 gap-2 md:gap-3">
         <Cell value={t.d} label="Days" />
         <Cell value={t.h} label="Hours" />
         <Cell value={t.m} label="Mins" />

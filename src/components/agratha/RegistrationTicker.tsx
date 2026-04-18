@@ -11,12 +11,12 @@ const messages = [
 
 const RegistrationTicker = () => {
   return (
-    <div className="container py-8">
-      <div className="relative overflow-hidden glass-panel border-primary/30 rounded-2xl bg-primary/5 p-4 flex items-center gap-4">
+    <div className="container py-4 sm:py-8">
+      <div className="relative overflow-hidden glass-panel border-primary/30 rounded-2xl bg-primary/5 p-3 sm:p-4 flex items-center gap-2 sm:gap-4">
         {/* Fixed Title Label */}
-        <div className="flex-shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/20 border border-primary/40 text-primary shadow-glow-cyan z-10">
-          <Bell className="h-4 w-4 animate-bounce" />
-          <span className="font-display font-black text-xs tracking-wider uppercase">Notice</span>
+        <div className="flex-shrink-0 flex items-center gap-1 sm:gap-2 px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-primary/20 border border-primary/40 text-primary shadow-glow-cyan z-10">
+          <Bell className="h-3 w-3 sm:h-4 sm:w-4 animate-bounce" />
+          <span className="font-display font-black text-[10px] sm:text-xs tracking-wider uppercase">Notice</span>
         </div>
 
         {/* Scrolling Content */}

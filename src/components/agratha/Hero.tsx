@@ -7,7 +7,7 @@ import EventRoadmap from "./EventRoadmap";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-56 pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-32 sm:pt-40 lg:pt-56 pb-16 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -56,7 +56,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-display font-black tracking-tighter leading-[0.9] text-[clamp(3rem,9vw,7.5rem)]"
+            className="font-display font-black tracking-tighter leading-[0.9] text-[clamp(2.5rem,10vw,7.5rem)]"
           >
             <span className="block neon-text animate-neon-flicker">अGRATHA</span>
             <span className="block text-foreground/90 text-glow-cyan">
