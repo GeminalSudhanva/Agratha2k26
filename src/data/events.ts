@@ -26,12 +26,13 @@ export const events: AgrathaEvent[] = [
     department: "Computer Science & Allied",
     category: "mega",
     date: "5/5/2026 – 6/5/2026",
+    registrationUrl: "https://hack-fusion-lake.vercel.app/",
     description:
       "A 24-hour hackathon where coders fuse ideas, AI, and caffeine to ship the future. Form your squad and ship something legendary.",
     coordinators: [
-      { name: "Mr. Tanveer K (CSE)", phone: "9241220230" },
-      { name: "Mrs. Shobha J (CSE)", phone: "8618309795" },
-      { name: "Mrs. Kavita M (CSD)", phone: "9164592547" },
+      { name: "Prof. Irshad I", phone: "9986715099" },
+      { name: "Mrs. Harsha A", phone: "9886155553" },
+      { name: "Dr. Chandru J", phone: "9535142472" },
     ],
     xp: 1200,
     difficulty: "Legend",
