@@ -456,6 +456,7 @@ export const events: AgrathaEvent[] = [
     department: "Electrical & Electronics Engineering",
     category: "non-technical",
     date: "7/5/2026",
+    registrationUrl: "https://docs.google.com/forms/d/1vA7gVK9eJdMHodf01H3R59yJJAwPGwa2DfrtRLa4Mg0/viewform",
     time: "10:30 AM onwards",
     description: "Silence speaks loudest. Tell a compelling story without a single word.",
     rules: [
@@ -530,6 +531,7 @@ export const events: AgrathaEvent[] = [
     department: "MBA",
     category: "non-technical",
     date: "7/5/2026",
+    registrationUrl: "https://forms.gle/caVCQVJJ7z8btCn69",
     description: "A 4-event MBA mashup featuring HR, Finance, and MM tracks. A test of strategy, fun, and pure adrenaline.",
     coordinators: [{ name: "Dr. Vani", phone: "8951035919" }],
     xp: 600,
