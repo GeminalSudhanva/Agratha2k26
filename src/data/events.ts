@@ -378,6 +378,7 @@ export const events: AgrathaEvent[] = [
     department: "Electrical & Electronics Engineering",
     category: "non-technical",
     date: "7/5/2026",
+    registrationUrl: "https://docs.google.com/forms/d/1bWM3XRnlQ7C-kmkEMRMZlRyzwQNbjfwZWJCDVJKmiFY/viewform?usp=drivesdk&edit_requested=true",
     time: "10:30 AM onwards",
     description: "Solo singing competition. Non Classical / Semi-classical. Show off your vocal brilliance.",
     rules: [
@@ -404,6 +405,7 @@ export const events: AgrathaEvent[] = [
     department: "Electrical & Electronics Engineering",
     category: "non-technical",
     date: "7/5/2026",
+    registrationUrl: "https://docs.google.com/forms/d/1bWM3XRnlQ7C-kmkEMRMZlRyzwQNbjfwZWJCDVJKmiFY/viewform?usp=drivesdk&edit_requested=true",
     time: "10:30 AM onwards",
     description: "Harmonize with your squad in this vocal battle.",
     rules: [

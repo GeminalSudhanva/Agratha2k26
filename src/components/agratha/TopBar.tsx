@@ -10,9 +10,9 @@ const TopBar = () => {
           transition={{ duration: 0.5 }}
           className="flex-1 flex justify-start"
         >
-          <img 
-            src="/colleg logo-Photoroom.png" 
-            alt="College Logo" 
+          <img
+            src="/colleg logo-Photoroom.png"
+            alt="College Logo"
             className="h-10 sm:h-12 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
           />
         </motion.div>
@@ -25,9 +25,9 @@ const TopBar = () => {
         >
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-neon blur-md opacity-40 group-hover:opacity-60 transition duration-500" />
-            <img 
-              src="/swamiji-Photoroom.png" 
-              alt="Swamiji" 
+            <img
+              src="/agrata logo-Photoroom.png"
+              alt="Swamiji"
               className="relative h-14 sm:h-16 md:h-24 w-auto object-contain"
             />
           </div>
@@ -39,9 +39,9 @@ const TopBar = () => {
           transition={{ duration: 0.5 }}
           className="flex-1 flex justify-end"
         >
-          <img 
-            src="/agrata logo-Photoroom.png" 
-            alt="Agratha Logo" 
+          <img
+            src="/swamiji-Photoroom.png"
+            alt="Agratha Logo"
             className="h-10 sm:h-12 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
           />
         </motion.div>
