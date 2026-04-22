@@ -628,7 +628,7 @@ export const events: AgrathaEvent[] = [
     category: "technical",
     date: "7/5/2026",
     time: "11:00 AM",
-    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdceiRKEfYOTpW3NphSwT89ho-W_tbj6alW_LC-P7bFzimamg/viewform?usp=publish-editor",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScOAgAThoEUeqv4W2-eOraZlCaJjjkVPrsR1GZL6Pp_AjdqdA/viewform?usp=publish-editor",
     venue: "Lab 3",
     description: "60 minutes. One killer app idea. Pitch your vision to the judges and potentially ship the future. Problem statement assigned via chits.",
     coordinators: [
