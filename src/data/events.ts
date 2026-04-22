@@ -717,6 +717,8 @@ export const events: AgrathaEvent[] = [
     department: "AGM Polytechnic",
     category: "non-technical",
     date: "7/5/2026",
+    image: "/mehendi.jpeg",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSe17MWz85GrGsxdwG15Atoyvj_Nku2b6uiDB-IyrEnkCVOxoQ/viewform?usp=publish-editor",
     description: "Traditional patterns meet modern artistry.",
     coordinators: [{ name: "Mrs. Ashwini K", phone: "8088772090" }],
     xp: 300,
