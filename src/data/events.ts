@@ -620,6 +620,19 @@ export const events: AgrathaEvent[] = [
     xp: 800,
     difficulty: "Elite",
     prizes: ["Winners: 5k", "Runners: 3k"],
+    rules: [
+      "1. REGISTRATION: Registration is mandatory for all participants before the event begins.",
+      "2. TEAM COMPOSITION: Each team must consist of exactly 2 members — no more, no less.",
+      "3. ID CARD: Participants must carry a valid ID card at all times during the event.",
+      "4. ROUND STRUCTURE: The event will consist of 4 rounds, each with a strict time limit.",
+      "5. ROUND INSTRUCTIONS: Instructions for each round will be provided just before it starts.",
+      "6. ALLOWED LANGUAGES: Only the following languages are allowed: C, Java, Python.",
+      "7. PROVIDED SYSTEMS: Participants must use only the provided systems/software for coding.",
+      "8. NO EXTERNAL HELP: No external help (internet, mobile phones, notes, etc.) is allowed unless specified.",
+      "9. QUESTION PATTERN: Questions may include Basic DSA, DBMS, and logical problem-solving concepts.",
+      "10. MALPRACTICE: Any form of malpractice or misconduct will lead to immediate disqualification, and the judges’ decision will be final.",
+      "NOTE: Think Fast. Code Smart. Debug Like a Pro! Maintain Discipline and Follow All Instructions."
+    ],
   },
   {
     id: "app-idea",
@@ -641,12 +654,14 @@ export const events: AgrathaEvent[] = [
     difficulty: "Pro",
     prizes: ["Winners: 5k", "Runners: 3k"],
     rules: [
-      "Participation: Teams of 2 members",
-      "Format: 1 Hour total (10-15 mins prep, 2-3 mins pitch)",
-      "Criteria: App Name, Problem Statement, Solution, Key Features",
-      "Strict time limit for presentation",
-      "Mobile use allowed for basic reference only",
-      "Misconduct leads to immediate disqualification"
+      "1. PARTICIPATION: Participants can join individually or in teams (maximum 2 members). Registration is mandatory before the event begins. Each team will receive one problem statement through a chit system.",
+      "2. EVENT FORMAT: Total event duration: 1 Hour (10–15 minutes for idea preparation, 2–3 minutes to present).",
+      "3. PRESENTATION GUIDELINES: Teams must clearly explain: App Name, Problem Statement, Proposed Solution (App Idea), and Key Features.",
+      "4. TIME RULES: Strict time limit of 2–3 minutes per team. Exceeding the time limit may result in negative marking.",
+      "6. FAIR PLAY: Ideas must be original and not copied. Mobile use for basic reference is allowed.",
+      "7. DISCIPLINE: Maintain silence during presentations. Respect judges and participants. Misconduct leads to disqualification.",
+      "8. DECISION RULES: Judges’ decision will be final and binding.",
+      "9. GENERAL INSTRUCTIONS: Be creative and practical. Focus on solving real-life problems."
     ],
   },
   {
@@ -667,7 +682,18 @@ export const events: AgrathaEvent[] = [
     ],
     xp: 500,
     difficulty: "Pro",
-    prizes: ["Winners: 15k", "Runners: 10k"],
+    prizes: ["Winners: 15k + Certificate", "Runners: 10k + Certificate", "Participation Certificates for all"],
+    rules: [
+      "GENERAL RULES: Open to students from recognized colleges. Valid college ID is mandatory. Report 30 minutes before performance. Judges' decision is final. No fire, water, or hazardous props allowed. Participants must arrange their own costumes, makeup, and props.",
+      "CATEGORIES: Solo Dance | Group Dance (3–8 members per team). Sub-Categories: Classical, Hip-Hop, Folk, Fusion (mention during registration).",
+      "TIME LIMITS: Solo (3–5 minutes), Group (5–6 minutes). Exceeding the limit results in negative marking or disqualification.",
+      "MUSIC & TECHNICAL: Submit audio in MP3 format via USB drive before the event. Backup audio recommended. No phones allowed during performance.",
+      "JUDGING CRITERIA: Choreography, Creativity & Innovation, Synchronization (group), Expression & Stage Presence, Costume & Overall Impact.",
+      "PROPS: Simple props must be self-managed. Setup and removal must be within allotted time. Organizers not responsible for loss or damage.",
+      "REGISTRATION: Prior registration is mandatory. Perform according to allotted slot numbers; no changes will be entertained.",
+      "DISQUALIFICATION: Use of vulgar/offensive songs or movements, property damage, or violation of any rules.",
+      "AWARDS: Cash prizes and certificates for winners/runners-up. Participation certificates for all."
+    ],
   },
 
   // Polytechnic
