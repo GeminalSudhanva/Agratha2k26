@@ -181,6 +181,7 @@ export const events: AgrathaEvent[] = [
     name: "LAN Gaming",
     department: "Electronics & Communication",
     category: "non-technical",
+    image: "/lan gaming.jpeg",
     date: "7/5/2026",
     description: "Bring your loadout. Frag, clutch, dominate — winner takes the throne.",
     coordinators: [
