@@ -206,6 +206,8 @@ export const events: AgrathaEvent[] = [
     name: "Cook Without Fire",
     department: "Electronics & Communication",
     category: "non-technical",
+    image: "/flame less cooking.png",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdXMNC02EL8HWTMk0BLIepfIJt0R_IqYBMv_lCLQ7v2UUnu4w/viewform?usp=header",
     date: "8/5/2026",
     description: "Zero flame, full flavor. Innovate the menu of the future.",
     coordinators: [{ name: "Ms. Anupama", phone: "7022998139" }],
