@@ -17,6 +17,7 @@ export interface AgrathaEvent {
   difficulty: "Rookie" | "Pro" | "Elite" | "Legend";
   rules?: string[];
   prizes?: string[];
+  rulesPdf?: string;
 }
 
 export const events: AgrathaEvent[] = [
@@ -106,6 +107,7 @@ export const events: AgrathaEvent[] = [
       "Level 3: Develop - build the experience",
       "Level 4: Deliver - pitch the vision"
     ],
+    rulesPdf: "/Logic to layers Offical. (1).pdf",
   },
   {
     id: "dsa-quantum",
@@ -131,6 +133,7 @@ export const events: AgrathaEvent[] = [
       "Level 2: code debug",
       "Level 3: surprise round"
     ],
+    rulesPdf: "/DSA QUABTUM RULEBOOK F1.pdf",
   },
   {
     id: "treasure-hunt",
@@ -180,16 +183,32 @@ export const events: AgrathaEvent[] = [
   },
   {
     id: "photography",
-    name: "Photography",
+    name: "Pixel Photography (Photography Contest)",
     department: "Computer Science & Allied",
     category: "non-technical",
     date: "8/5/2026",
+    venue: "AGMR CET, VARUR",
     image: "/photography.jpeg",
     registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf8bK72F3xcEmVIrm59RkBN8OjU5WH4ChzuLuCManyx5k7Seg/viewform?usp=dialog",
-    description: "Frame the unseen. Theme reveals on the spot — your lens, your call.",
-    coordinators: [{ name: "Mrs. Kavita M", phone: "9164592547" }],
-    xp: 400,
+    entryFee: "100/-",
+    description: "Capture Moments • Freeze Memories • Showcase Talent. A creative photography battle across themes like Tech Meets Tradition and Shadow & Light.",
+    coordinators: [
+      { name: "Prof. Tanveer Khatib", phone: "9221220230" },
+      { name: "Prof. Shobha DJ", phone: "8618309795" },
+      { name: "Miss Preeti", phone: "8123996045" },
+      { name: "Miss Priyanka", phone: "8618534462" },
+    ],
+    xp: 450,
     difficulty: "Rookie",
+    rules: [
+      "Mobile / DSLR cameras allowed.",
+      "Photos must be captured during the fest only.",
+      "Each participant can submit 1–3 photos.",
+      "Basic editing allowed; heavy editing not allowed.",
+      "Submit with title & short caption.",
+      "Themes: Tech Meets Tradition, The Unseen Campus, Colours of Fest, One Frame, One Story, Shadow & Light."
+    ],
+    prizes: ["Winner – ₹3000", "1st Runner Up – ₹2000", "2nd Runner Up – ₹1000"],
   },
   {
     id: "stage-spark",
@@ -234,14 +253,20 @@ export const events: AgrathaEvent[] = [
     category: "non-technical",
     image: "/lan gaming.jpeg",
     registrationUrl: "https://forms.gle/p6G3t3U9nmtTfutP7",
-    date: "7/5/2026",
-    description: "Bring your loadout. Frag, clutch, dominate — winner takes the throne.",
+    date: "08/05/2026",
+    venue: "3rd Floor AGMRCET",
+    entryFee: "₹200",
+    description: "Jump in and showcase your teamwork and skill in this action-packed war. Frag, clutch, dominate — winner takes the throne.",
     coordinators: [
-      { name: "Ms. Vijaylaxmi", phone: "8088221096" },
-      { name: "Ms. Anupama", phone: "7022998139" },
+      { name: "Mr. Sharath R", phone: "9113542477" },
+      { name: "Mr. Prashanth G", phone: "6360979956" },
+      { name: "Mr. Chandan H", phone: "9353092079" },
+      { name: "Ms. Kavita K", phone: "8792412737" },
+      { name: "Dr. Kunjan Shinde (Faculty)", phone: "9844128510" },
     ],
     xp: 800,
     difficulty: "Elite",
+    prizes: ["Total Prize Pool: ₹20,000"],
   },
   {
     id: "escape-room",
@@ -251,10 +276,19 @@ export const events: AgrathaEvent[] = [
     image: "/escape room.jpeg",
     registrationUrl: "https://forms.gle/i7Lcrce6xdNRBeJM7",
     date: "7/5/2026",
-    description: "Locked in. 60 minutes. Solve the puzzle or stay forever.",
-    coordinators: [{ name: "Ms. Vijaylaxmi", phone: "8088221096" }],
+    time: "10 AM",
+    venue: "SFLH-14",
+    entryFee: "₹100",
+    description: "Gather your courage and test your wits in an immersive, adrenaline-pumping adventure. Locked in. Solve the puzzle or stay forever.",
+    coordinators: [
+      { name: "Lekhana", phone: "9591372370" },
+      { name: "Saniya M", phone: "6364611070" },
+      { name: "Aqsa K", phone: "9353141178" },
+      { name: "Mr. Ramesh A (Faculty)", phone: "9738929769" },
+    ],
     xp: 550,
     difficulty: "Pro",
+    prizes: ["Prize pool up to 10K"],
   },
   {
     id: "cook-no-fire",
@@ -289,25 +323,27 @@ export const events: AgrathaEvent[] = [
     venue: "AGMR College",
     image: "/robo race.jpeg",
     registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScrYBb3eQvCFquUhLTlRBHUQ1gEGfmCo1cqz1AkAtRBgvw54w/viewform",
-    description:
-      "The ultimate test of robotics, control systems, and speed. Design your bot to navigate a high-intensity track featuring ramps, obstacles, and zig-zag turns in the shortest time possible.",
+    entryFee: "₹299",
+    description: "Out-code, Out-race, Out-last. The ultimate test of robotics, control systems, and speed. Design your wireless bot to navigate a high-intensity track in the shortest time possible.",
     coordinators: [
-      { name: "Asif Iqbal Mulla (Staff)", phone: "9986516445" },
-      { name: "Prashant Jevargi", phone: "8431519744" },
-      { name: "Sharat Raikar", phone: "9113542477" },
+      { name: "Prof. Asif Iqbal Mulla (Staff)", phone: "9986516445" },
+      { name: "Prashant J", phone: "8431519744" },
+      { name: "Suhas", phone: "7338137319" },
     ],
     xp: 800,
     difficulty: "Elite",
     rules: [
-      "Robot Specs: Max 30x30x30 cm, 5kg weight, 12V power supply. Manual control only (Wired/Wireless).",
+      "Team: Each team must consist of exactly 4 members.",
+      "Control: Only wireless control robots are allowed.",
+      "Specs: Max 30x30x30 cm, 5kg weight, 12V power supply.",
+      "Game Rules: 2 attempts per team (best time counts). Max 5 mins per run.",
       "Track: Must stay within boundaries. Includes straight paths, zig-zags, ramps, and obstacles.",
-      "Game Rules: 2 attempts per team (best time counts). Max 3 mins per run.",
       "Penalties: Off-track (+5s), Manual touch (+10s), Restart (+15s), Skipping obstacle (Disqualification).",
-      "Disqualification: Use of excess power, damaging track, unethical behavior, or ignoring instructions.",
       "Judging: Winner decided by least time + minimum penalties + successful completion.",
-      "Safety: Proper wire insulation is mandatory. No fire hazards. Emergency stop must be accessible.",
+      "Safety: Proper wire insulation is mandatory. Emergency stop must be accessible.",
       "Reporting: Teams must report 30 minutes before the event starts. Judges' decisions are final."
     ],
+    prizes: ["Total Prize Pool: ₹15,000/-"],
   },
   {
     id: "six-aside-football",
@@ -316,21 +352,26 @@ export const events: AgrathaEvent[] = [
     category: "non-technical",
     image: "/Foot Ball.jpeg",
     date: "7/5/2026",
+    venue: "AGMR Sports Ground",
+    entryFee: "Rs: 600/- per team",
     description: "The ultimate pitch battle. 6 players, one ball, zero mercy. Dribble, pass, and strike your way to the championship in this high-intensity 6-a-side tournament.",
     coordinators: [
-      { name: "Ms. Vijaylaxmi", phone: "8088221096" },
-      { name: "Ms. Anupama", phone: "7022998139" },
+      { name: "Mr. Shreeshail", phone: "9611623440" },
+      { name: "Mr. Starline G", phone: "7829641925" },
+      { name: "Mr. Prasad J", phone: "9632171597" },
+      { name: "Mr. Melvin", phone: "8904711868" },
+      { name: "Prof. Naveen T (Faculty)", phone: "8904341963" },
     ],
     xp: 600,
     difficulty: "Pro",
     rules: [
-      "Each team must have 6 players on the field.",
-      "Maximum of 2 substitutes per team.",
-      "Matches will be played in two halves of 7-10 minutes each.",
-      "Rolling substitutions are allowed.",
+      "6 Members per Team + 2 Extras.",
+      "College ID Cards Compulsory.",
+      "Duration: 8 minutes per half.",
       "Referees' decisions are final and binding.",
       "Proper sports gear is recommended."
     ],
+    prizes: ["Total Prize Pool: ₹15,000/-"],
   },
 
   // BSH

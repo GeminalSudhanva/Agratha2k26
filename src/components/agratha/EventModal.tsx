@@ -117,6 +117,28 @@ const EventModal = ({ event, onClose }: Props) => {
                   </p>
                 </div>
 
+                {event.rulesPdf && (
+                  <div>
+                    <a
+                      href={event.rulesPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-4 p-4 rounded-2xl border border-secondary/30 bg-secondary/5 hover:bg-secondary/10 transition-all group hud-corners"
+                    >
+                      <div className="h-12 w-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary group-hover:shadow-glow-magenta/20 transition-all">
+                        <Scroll className="h-6 w-6" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="text-sm font-display font-black text-foreground uppercase tracking-wide">Official Rulebook</div>
+                        <div className="text-[10px] font-mono-tech text-secondary/70 uppercase tracking-[0.2em]">Deployment Documentation · PDF</div>
+                      </div>
+                      <div className="font-mono-tech text-[10px] text-secondary border border-secondary/30 px-2 py-1 rounded group-hover:bg-secondary group-hover:text-background transition-colors">
+                        DOWNLOAD
+                      </div>
+                    </a>
+                  </div>
+                )}
+
                 <div>
                   <div className="flex items-center gap-2 font-mono-tech text-[10px] tracking-[0.3em] text-muted-foreground uppercase mb-3">
                     <Users className="h-3 w-3" /> Coordinators
