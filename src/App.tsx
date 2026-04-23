@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Developers from "./pages/Developers.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import SmoothScroll from "./components/agratha/SmoothScroll";
+import ScrollToTop from "./components/agratha/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/developers" element={<Developers />} />

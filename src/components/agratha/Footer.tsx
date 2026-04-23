@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, Globe, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -45,13 +46,19 @@ const Footer = () => {
                 ["About", "#about"],
                 ["Briefing", "#principal"],
                 ["Events", "#events"],
-                ["Developer", "#developer"],
+                ["Developer", "/developers"],
                 ["Register", "#register"],
               ].map(([l, h]) => (
                 <li key={l}>
-                  <a href={h} className="text-muted-foreground hover:text-primary transition">
-                    {l}
-                  </a>
+                  {h.startsWith("/") ? (
+                    <Link to={h} className="text-muted-foreground hover:text-primary transition">
+                      {l}
+                    </Link>
+                  ) : (
+                    <a href={h} className="text-muted-foreground hover:text-primary transition">
+                      {l}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
