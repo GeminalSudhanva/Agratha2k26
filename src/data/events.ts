@@ -473,7 +473,7 @@ export const events: AgrathaEvent[] = [
     department: "Basic Science & Humanities",
     category: "non-technical",
     date: "8/5/2026",
-    image: "/drawing.jpeg",
+    image: "/drwaing.jpeg",
     registrationUrl: "https://forms.gle/xksNDfXjdnTAk9C9A",
     time: "12:00 Noon Onwards",
     venue: "AFFCR-03",
