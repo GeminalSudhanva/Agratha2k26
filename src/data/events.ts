@@ -368,6 +368,7 @@ export const events: AgrathaEvent[] = [
     department: "Electronics & Communication",
     category: "non-technical",
     image: "/Foot Ball.jpeg",
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfuc5lL-V5pDyKmzLOMIcQv6MjqhKsdH0OwW6lLA5UNV3yeuQ/viewform?usp=header",
     date: "7/5/2026",
     venue: "AGMR Sports Ground",
     entryFee: "Rs: 600/- per team",
