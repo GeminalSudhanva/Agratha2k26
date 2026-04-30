@@ -3,10 +3,8 @@ import { Bell } from "lucide-react";
 
 const messages = [
   "PRIZE POOL: Over ₹5,00,000+ in rewards to be won across all arenas!",
-  "REGISTER LIVE: Technical Paper Presentation is now open for all technical disciplines!",
-  "COMING SOON: Registrations for other arenas opening shortly. Keep your eyes on the grid.",
-  "NOTICE: Accommodation provided for students traveling from distances exceeding 100km.",
-  "SYSTEM STATUS: All systems operational. Prepare for Agratha 2K26 entering the arena.",
+  "IEEE paper presenation regisstrations extended till 4th may",
+  "All the registrations are now open!"
 ];
 
 const RegistrationTicker = () => {
