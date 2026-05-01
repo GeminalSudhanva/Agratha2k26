@@ -862,6 +862,7 @@ export const events: AgrathaEvent[] = [
     department: "BCA & BBA",
     category: "technical",
     date: "7/5/2026",
+    entryFee: "300",
     image: "/app idea.jpeg",
     time: "11:00 AM",
     registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScOAgAThoEUeqv4W2-eOraZlCaJjjkVPrsR1GZL6Pp_AjdqdA/viewform?usp=publish-editor",
